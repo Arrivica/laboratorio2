@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'HIRO MISAKE';
+    src: url("../fonts/HIROMISAKE.ttf");
+}
+
+body{
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.container-nav{
+    background-color: #ff020f;
+    justify-content: center;
+    height: 70px;
+}
+.wrapper-logo-{
+    width: 198px;
+    height: 70px;
+}   
+.links{
+    top: 40px;
+    position: absolute;
+    left: 1500px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 7px;
+}
+
+.main{
+    margin: 40px auto;
+    width: 90%;
+    align-items: center;
+    display: flex;
+}
+.wrapper-img{
+    width: 344px;
+    text-align: right;
+    justify-content: right;
+    align-items: flex-start;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper-title{
+    margin-top: 40px;
+    font-family: 'HIRO MISAKE', cursive;
+    font-size: 5em;
+    height: auto;
+    text-align: center;
+    color: #000000;
+}
+.wrapper-precio{
+    margin: 0;
+    font-family: 'pro-display';
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+}
+
+.wrapper-descrip{
+    margin: 0;
+    font-family: 'pro-display';
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.wrapper-button{
+    width: 700px;
+    height: 70px;
+    background-color: rebeccapurple;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'pro-display';
+    font-size: 28px;
+}
+.añadir{
+    background-color: #505050;
+    color: white;
+}
+.comprar{
+    background-color: #505050;
+    color: white;
+}
+.regresar{
+    background-color: #ff020f;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.wrapper-description{
+    margin-top: 20px;
+    font-family: 'pro-display';
+    font-size: 30px;
+}
+
+.wrapper-botones{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.regresar-btn{
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper-info{
+    text-align: right;
+    width: 730px;
+}
+

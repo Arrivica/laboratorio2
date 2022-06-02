@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'HIRO MISAKE';
+    src: url("../fonts/HIROMISAKE.ttf");
+    
+}
+
+@font-face {
+    font-family: 'HIRO MISAKE';
+    src: url("../fonts/Vogue.ttf");
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: open;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1290px;
+    margin: auto;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.sobre{ 
+    color: #ff020f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'HIRO MISAKE';
+}
+
+.titulo2{
+    color: #ffffff; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'HIRO MISAKE';
+}
+
+.titulo5{
+    color: #ffffff; 
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 60px;
+    font-family: 'HIRO MISAKE';
+}
+
+.titulo6{
+    color: #ffffff; 
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'HIRO MISAKE';
+    margin-top: 60px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(219, 1, 1);
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff0000, #f70000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.616), hsla(0, 0%, 47%, 0.616)), url(../Img/ranfondo.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav{
+    text-align: center;
+    padding: 30px 50px 0 0;
+    font-size: 20px;
+}
+
+
+
+nav > a{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .texto-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(196, 47, 47);
+}
+
+.texto-header h1{
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(252, 252, 252);
+    text-transform: uppercase;
+    font-family:'HIRO MISAKE';
+}
+
+.texto-header h2{
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'HIRO MISAKE';
+    text-shadow: #000000;
+    box-shadow: #ccc;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    
+}
+
+
+.imagen-about-us{
+    size: 30px;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+}
+
+.contenido-textosh3{
+    margin-bottom: 15px;
+}
+
+
+.h4{
+    display: inline-block;
+    text-align: left;
+    width: 470px;
+    height: 60px;
+    margin-right: 15px;
+    font-size: 40px;
+    padding-left: 14px;
+}
+
+.ph4{
+    display: inline-block;
+    text-align: left;
+    height: 90px;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ph5{
+    display: inline-block;
+    text-align: left;
+    width: 470px;
+    height: 50px;
+    padding: 0px;
+    margin-right: 15px;
+    font-size: 25px;
+    font-size: bold;
+    
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+
+}
+
+/* Galeria */
+
+.portafolio{
+    background: #af0009;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.p_bebidas{
+    justify-content: center;
+}
+.beb{
+    margin: 0 7px;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(255, 21, 21, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    width: 100%;
+}
+
+.cards .card{
+    background: #d10e0e;
+    display: flex;
+    width: 700px;
+    height: 220px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+    
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-cardp{
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.contenido-texto-card h4{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenido-texto-card p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Our team */
+
+.about-services{
+    background: #ffffff;
+    padding-bottom: 50px;
+    font-size: 20px
+    
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.servicio-ind{
+    width: 45%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Vogue';
+    font-size: 20px;
+}
+
+.mision{
+    font-size: 30px;
+    
+}
+
+.vision{
+    font-size: 30px;
+    
+}
+/* footer */
+
+footer{
+    background: #b30303;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'vogue';
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-family: 'vogue';
+}
+
+.content-foo{
+    text-align: center;
+    font-family: 'vogue';
+}
+
+.content-foo h4{
+    color: #ccc;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: 'vogue';
+}
+
+.content-foo p{
+    color: rgb(243, 243, 243);
+    font-family: 'vogue';
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    font-family: 'vogue';
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+.imagen{
+    width: 20em;
+}
+
+.container-images2{
+    position: absolute;
+    width: 22em;
+    top: 750px;
+    left: 950px;
+}
+.container-images3{
+    position: absolute;
+    width: 22em;
+    top: 700px;
+    left: 1300px;
+    z-index: 0;
+}
+.container-images1{
+    position: absolute;
+    width: 22em;
+    top: 900px;
+    left: 1100px;
+    z-index: 1;
+}
+.label{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
