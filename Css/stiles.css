@@ -143,6 +143,7 @@ header .texto-header{
     display: flex;
     justify-content: space-evenly;
     background-color: #ffffff;
+  
     
 }
 
@@ -153,6 +154,11 @@ header .texto-header{
 
 .sobre-nosotros .contenido-textos{
     width: 50%;
+
+}
+
+.sobre-nosotros{
+    height: 800px;
 }
 
 .contenido-textosh3{
